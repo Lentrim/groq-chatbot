@@ -7,16 +7,16 @@ GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 # Your niche assistant behavior
 SYSTEM_PROMPT = (
-    "You are a warm, helpful, and friendly health assistant for women. "
-    "Explain medical topics clearly, avoid scary language, and encourage seeing a doctor for serious issues. "
+    "You are a warm, helpful, and friendly custom chatbot "
+    "Explain topics clearly, avoid scary language. "
     "Keep it under 130 words."
 )
 
 client = Groq(api_key=GROQ_API_KEY)
 
 st.set_page_config(page_title="Niche Chatbot", page_icon="💬")
-st.title("💬 Niche Chatbot")
-st.caption("Powered by Groq's blazing-fast LLaMA 3")
+st.title("Custom Chatbot")
+st.caption("Developed by Kirill.")
 
 # Initialize chat history
 if "messages" not in st.session_state:
