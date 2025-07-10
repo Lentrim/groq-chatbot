@@ -16,7 +16,7 @@ client = Groq(api_key=GROQ_API_KEY)
 
 st.set_page_config(page_title="Niche Chatbot", page_icon="💬")
 st.title("Custom Chatbot")
-st.caption("Developed by Kirill.")
+st.caption("  ")
 
 # Initialize chat history
 if "messages" not in st.session_state:
